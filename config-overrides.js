@@ -11,12 +11,5 @@ module.exports = function override(config, env) {
     '@utils': path.resolve(__dirname, './src/utils'),
   };
 
-  config.output = {
-    // ЗДЕСЬ МОЖНО ОТРЕДАКТИРОВАТЬ КОНФИГУРАЦИЮ WEBPACK
-    ...config.output,
-    path: path.resolve(__dirname, './dist'),
-    filename: 'modsen_bundle.js',
-  };
-
   return config;
 };
